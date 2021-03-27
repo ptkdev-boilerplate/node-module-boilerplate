@@ -60,5 +60,21 @@
 	},
 	"todo-tree.highlights.defaultHighlight": {
 		"type": "text-and-comment"
+	},
+	"material-icon-theme.folders.associations": {
+		"wordpress": "wordpress",
+		"modules": "App",
+		"desktop": "Container",
+		"dist-desktop": "Dist",
+		"dist-client": "Dist",
+		"dist-mobile": "Dist",
+		"webcomponent": "Middleware",
+		"webcomponents": "Middleware",
+		"interfaces": "Include",
+		"interface": "Include",
+		"logger": "Log",
+		"mode": "Class",
+		"types": "Typescript",
+		"ISSUE_TEMPLATE": "Template"
 	}
 }

@@ -1,14 +1,17 @@
 {
 	"compilerOptions": {
-		"module": "ESNEXT",
+		"module": "commonjs",
 		"target": "ES2019",
 		"sourceMap": true,
 		"outDir": "./dist/",
+		"lib": ["es2017", "es7", "es6", "DOM"],
 		"baseUrl": ".",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
-		"typeRoots": ["/types", "/node_modules/@types"]
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"typeRoots": ["app/types", "node_modules/@types"]
 	},
 	"include": ["app/**/*", "configs/**/*", "translations/**/*"],
-	"exclude": ["node_modules/*", "dist/*", "scripts/*", "app/modules/run.ts"]
+	"exclude": ["node_modules/*", "dist/*", "scripts/*"]
 }
