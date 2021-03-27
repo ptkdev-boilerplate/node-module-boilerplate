@@ -37,16 +37,6 @@
 					"platform": "shields"
 				},
 				{
-					"url": "https://svelte.dev/",
-					"color": "#FF3C02",
-					"label": "powered by",
-					"message": "svelte",
-					"title": "Powered By Svelte",
-					"style": "flat",
-					"logo": "svelte",
-					"platform": "shields"
-				},
-				{
 					"url": "https://www.typescriptlang.org/",
 					"color": "blue",
 					"label": "language",
