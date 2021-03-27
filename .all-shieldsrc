@@ -266,19 +266,19 @@
 					"platform": "shields"
 				},
 				{
-					"url": "https://github.com/ptkdev-boilerplate?q=webcomponent",
+					"url": "https://github.com/ptkdev-boilerplate?q=svelte",
 					"color": "#f368e0",
 					"label": "👔 Boilerplate",
-					"message": "WebComponents",
+					"message": "Svelte",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"
 				},
 				{
-					"url": "https://github.com/ptkdev-boilerplate?q=svelte",
+					"url": "https://github.com/ptkdev-boilerplate?q=webcomponent",
 					"color": "#f368e0",
 					"label": "👔 Boilerplate",
-					"message": "Svelte",
+					"message": "WebComponents",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"
