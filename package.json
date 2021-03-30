@@ -1,7 +1,7 @@
 {
 	"name": "@ptkdev/node-module-boilerplate",
-	"displayName": "Node Command Line Interface Boilerplate",
-	"description": "Create your node module (library) with this friendly boilerplate. Use this respository as template for your new node command line interface project",
+	"displayName": "Node Module (Library) Boilerplate",
+	"description": "Create your node module (library) with this friendly boilerplate. Use this respository as template for your new node library/module",
 	"version": "1.0.20210330",
 	"main": "dist/functions/module.js",
 	"types": "dist/types/module.type.d.js",
