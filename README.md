@@ -1,10 +1,10 @@
-# 🚀 node-module-boilerplate
+# 🧰 node-module-boilerplate
 
 <!-- all-shields/header-badges:START -->
-[![v1.0.20210326](https://img.shields.io/badge/version-v1.0.20210326-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev-boilerplate/node-module-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev-boilerplate/node-module-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io) 
+[![v1.0.20210330](https://img.shields.io/badge/version-v1.0.20210330-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-module-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-module-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io) 
 <!-- all-shields/header-badges:END -->
 
-Create your node module (library) with this friendly boilerplate.
+Create your node module (library) with this friendly boilerplate. Use this respository as template for your new node command line interface project
 
 ## 🎁 Support: Donate
 
@@ -17,16 +17,42 @@ Create your node module (library) with this friendly boilerplate.
 ## 📎 Menu
 
 -   💡 [Features](#-features)
+-   🚀 [How to use](#-usage)
 -   🔨 [Developer Mode](#-developer-mode)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-module-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
-    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-module-boilerplate/main/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English Channel](https://discord.gg/YkMG26f) | [🇮🇹 Italian Channel](https://discord.gg/HFtdBAJ) | [🇵🇱 Polish Channel](https://discord.gg/TV5EXFd))
+    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-module-boilerplate/main/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English Channel](https://discord.gg/jqUSGPKdmA) | [🇮🇹 Italian Channel](https://discord.gg/SJFcbvG6RU) | [🇵🇱 Polish Channel](https://discord.gg/25vg4VFhb7))
 
 ## 💡 Features
 
 -   [✔️] Easy to use
 -   [✔️] MIT License
+-   [✔️] Make node module (library) Package for npm
+-   [✔️] Friendly boilerplate + Github templates
+-   [✔️] Typescript + TSPaths preconfigured
+-   [✔️] Userfriendly folders tree
+-   [✔️] Prettiers and ESLint preconfigured
+-   [✔️] all-contributors-cli and all-shields-cli preconfigured
+-   [✔️] JEST Test preconfigured
+-   [✔️] Full async code
+-   [✔️] i18n translations
+-   [✔️] Github and Vscode dotfiles preconfigured
+
+## 🚀 Usage
+
+1. In your node project run: `npm install @ptkdev/node-module-boilerplate@latest --save`
+2. Usage (async):
+
+```javascript
+import m from "@ptkdev/node-module-boilerplate";
+
+(async () => {
+	const { app } = await m({ text: "hello-world" });
+
+	console.log(app());
+})();
+```
 
 ## 🔨 Developer Mode
 
@@ -87,7 +113,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 ## 💫 License
 
 -   Code and Contributions have **MIT License**
--   Images and logos have **CC BY-NC 4.0 License** ([Freepik](https://it.freepik.com/) Premium License)
+-   Images and logos have **CC BY-NC 4.0 License**
 -   Documentations and Translations have **CC BY 4.0 License**
 
 ###### Copyleft (c) 2021 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>

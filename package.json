@@ -1,10 +1,13 @@
 {
 	"name": "@ptkdev/node-module-boilerplate",
-	"displayName": "Node Module Boilerplate",
-	"description": "Create your node module (library) with this friendly boilerplate",
-	"version": "1.0.20210326",
-	"main": "dist/modules/module.js",
+	"displayName": "Node Command Line Interface Boilerplate",
+	"description": "Create your node module (library) with this friendly boilerplate. Use this respository as template for your new node command line interface project",
+	"version": "1.0.20210330",
+	"main": "dist/functions/module.js",
 	"types": "dist/types/module.type.d.js",
+	"publishConfig": {
+		"access": "public"
+	},
 	"author": "Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)",
 	"license": "MIT",
 	"license-docs": "CC BY 4.0",
@@ -22,9 +25,12 @@
 		"node": ">=14.0.0"
 	},
 	"scripts": {
-		"start": "node dist/modules/run.js",
-		"dev": "rm -rf dist && nodemon --exec 'npm run build && npm run start'",
-		"build": "tsc",
+		"start": "node dist/functions/run.js",
+		"link": "npm link",
+		"unlink": "npm unlink",
+		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && rm -rf dist && nodemon --exec 'npm run build && npm run start'",
+		"build": "ttsc",
+		"release": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && npm run build",
 		"test": "jest app",
 		"docs": "git submodule update --recursive && markserv ./README.md",
 		"lint": "eslint . --cache --ext .ts,.js",
@@ -39,19 +45,17 @@
 		"contributors-generate": "all-contributors generate",
 		"all-shields-generate": "all-shields-generate",
 		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
-		"pkg-clean": "rm -rf node_modules package-lock.json && npm install",
+		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
 		"pkg-update": "npm update",
-		"pkg-upgrade": "npx npm-check-updates -u && npm install",
-		"postinstall": "husky install"
+		"pkg-upgrade": "npx npm-check-updates -u && npm install && husky install"
 	},
 	"devDependencies": {
-		"@ptkdev/all-shields-cli": "^1.2.0",
-		"@ptkdev/logger": "^1.7.2",
+		"@ptkdev/all-shields-cli": "^1.3.0",
 		"@types/jest": "^26.0.22",
 		"@types/node": "^14.14.37",
 		"@types/shelljs": "^0.8.8",
-		"@typescript-eslint/eslint-plugin": "^4.19.0",
-		"@typescript-eslint/parser": "^4.19.0",
+		"@typescript-eslint/eslint-plugin": "^4.20.0",
+		"@typescript-eslint/parser": "^4.20.0",
 		"all-contributors-cli": "^6.20.0",
 		"eslint": "^7.23.0",
 		"eslint-plugin-jest": "^24.3.2",
@@ -64,7 +68,9 @@
 		"pm2": "^4.5.5",
 		"shelljs": "^0.8.4",
 		"ts-jest": "^26.5.4",
+		"ttypescript": "^1.5.12",
 		"typescript": "^4.2.3",
+		"typescript-transform-paths": "^2.2.3",
 		"yargs": "^16.2.0"
 	},
 	"keywords": [
@@ -72,7 +78,10 @@
 		"node",
 		"node-module",
 		"node-library",
-		"boilerplate"
+		"node-module-boilerplate",
+		"node-library-boilerplate",
+		"boilerplate",
+		"github-template"
 	],
 	"contributors": []
 }

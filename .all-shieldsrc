@@ -18,12 +18,12 @@
 					"platform": "shields"
 				},
 				{
-					"url": "https://www.npmjs.com/package/@ptkdev-boilerplate/node-module-boilerplate",
+					"url": "https://www.npmjs.com/package/@ptkdev/node-module-boilerplate",
 					"color": "#CC3534",
 					"label": "npm",
 					"logo": "npm",
 					"style": "flat",
-					"custom": "/npm/v/@ptkdev-boilerplate/node-module-boilerplate?color=CC3534&logo=npm",
+					"custom": "/npm/v/@ptkdev/node-module-boilerplate?color=CC3534&logo=npm",
 					"platform": "shields"
 				},
 				{
