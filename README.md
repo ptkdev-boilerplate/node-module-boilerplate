@@ -21,7 +21,7 @@ Create your npm library with this friendly boilerplate. Use this respository as 
 -   📚 [Documentation](#-documentation)
 -   🔨 [Developer Mode](#-developer-mode)
 -   -   ⚡ [Run Project](#-run-project)
--   -   ⚙️ [Setup Project](#-setup-project)
+-   -   💾 [Setup Project](#-setup-project)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-module-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
@@ -59,13 +59,13 @@ import m from "@ptkdev/node-module-boilerplate";
 
 ## 🔨 Developer Mode
 
-#### 🧑‍💻 Run Project
+#### 🏁 Run Project
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/node-module-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/node-module-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/node-module-boilerplate/archive/main.zip).
 2. Run `npm run init`
 3. Run `npm run dev`
 
-#### ⚙️ Setup Project
+#### 💾 Setup Project
 
 If you want replace all strings (example: package name, author, urls, etc...) in markdown file, source files and others files of this project you need edit `setup.json` with correct values and run `npm run setup`.
 
