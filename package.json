@@ -1,8 +1,8 @@
 {
 	"name": "@ptkdev/node-module-boilerplate",
-	"displayName": "Node Module (Library) Boilerplate",
-	"description": "Create your node module (library) with this friendly boilerplate. Use this respository as template for your new node library/module",
-	"version": "1.0.20210330",
+	"displayName": "Node NPM Library Boilerplate",
+	"description": "Create your npm library with this friendly boilerplate. Use this respository as template for your new node library/module",
+	"version": "1.0.20210404",
 	"main": "dist/functions/module.js",
 	"publishConfig": {
 		"access": "public"
@@ -24,6 +24,8 @@
 		"node": ">=14.0.0"
 	},
 	"scripts": {
+		"init": "npm install && husky install",
+		"setup": "ts-node --skip-project scripts/setup.ts && ts-node --skip-project scripts/changelog.ts && npm run pre-commit",
 		"start": "node dist/functions/run.js",
 		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && nodemon --exec 'npm run build && npm run start'",
 		"build": "ttsc",
