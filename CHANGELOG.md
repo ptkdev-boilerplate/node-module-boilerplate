@@ -1,4 +1,4 @@
-# v1.0.20210830 (April 12, 2021)
+# v1.0.20210830 (August 30, 2021)
 
 -   Security: update
 -   Fix: translations
