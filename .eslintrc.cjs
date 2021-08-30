@@ -49,13 +49,6 @@ module.exports = {
 				"beforeColon": false
 			}
 		],
-		"indent": [
-			"error",
-			"tab",
-			{
-				"SwitchCase": 1
-			}
-		],
 		"quotes": [
 			"error",
 			"double",

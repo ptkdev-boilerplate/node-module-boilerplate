@@ -10,11 +10,12 @@
  *
  */
 import m from "@app/functions/module";
-import configs from "@configs/config";
-
+import configs from "@configs/config.json";
+import translate from "@translations/translate.js";
+import logger from "@app/utils/logger";
 (async () => {
-	const { app } = await m({ text: "hello-world" });
+	const { app } = await m({ text: translate("hello", { name: "Boilerplate" }) });
 
-	console.log(app());
-	console.log(`debug: ${configs.debug}`);
+	logger.info(app());
+	logger.debug(configs.debug ? "true" : "false");
 })();
