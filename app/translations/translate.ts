@@ -7,18 +7,15 @@
  * @license: MIT License
  *
  */
-import config from "@configs/config.json";
+import configs from "@configs/config.json";
 import translations from "@app/routes/translations";
-
-interface TranslateParamsInterface {
-	name?: string;
-}
+import type { TranslateParamsInterface } from "@app/types/translate.type";
 
 /**
  * Replace Params
  * =====================
- * If translation text is: hi ##name## how are you?
- * This function replace ##name## token with correct value
+ * If translation text is: hi {{name}} how are you?
+ * This function replace {{name}} token with correct value
  *
  * @param {string} text - text of current phrase to translate (mandatory)
  * @param {Object} language_params - object with token to replace, example: {name:"alex"} (mandatory)
@@ -28,7 +25,7 @@ interface TranslateParamsInterface {
  */
 const replaceParams = (text: string, language_params: TranslateParamsInterface): string => {
 	for (const [key, value] of Object.entries(language_params)) {
-		text = text.replace(`##${key}##`, value);
+		text = text.replace(`{{${key}}}`, value);
 	}
 
 	return text;
@@ -45,11 +42,9 @@ const replaceParams = (text: string, language_params: TranslateParamsInterface):
  *
  */
 const check = (language_id: string): string => {
-	if (translations && translations[config.language] && translations[config.language][language_id]) {
-		return translations[config.language][language_id];
-	}
-
-	return translations["en"][language_id] || "";
+	return translations[configs.language] && translations[configs.language][language_id]
+		? translations[configs.language][language_id]
+		: translations["en"][language_id];
 };
 
 /**

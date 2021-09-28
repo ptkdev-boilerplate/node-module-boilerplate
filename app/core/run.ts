@@ -11,7 +11,7 @@
  */
 import m from "@app/functions/module";
 import configs from "@configs/config.json";
-import translate from "@translations/translate.js";
+import translate from "@translations/translate";
 import logger from "@app/utils/logger";
 (async () => {
 	const { app } = await m({ text: translate("hello", { name: "Boilerplate" }) });
