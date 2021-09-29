@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-module-boilerplate",
 	"displayName": "Node NPM Library Boilerplate",
 	"description": "Create your npm library with this friendly boilerplate. Use this respository as template for your new node library/module",
-	"version": "1.0.20210928",
+	"version": "1.0.20210930",
 	"main": "dist/functions/module.js",
 	"publishConfig": {
 		"access": "public"
@@ -49,6 +49,9 @@
 		"pkg-update": "npm update",
 		"pkg-upgrade": "npx npm-check-updates -u && npm install && husky install"
 	},
+	"dependencies": {
+		"@ptkdev/logger": "^1.8.0"
+	},
 	"devDependencies": {
 		"@ptkdev/all-shields-cli": "^2.0.2",
 		"@types/jest": "^27.0.2",
@@ -86,8 +89,5 @@
 		"boilerplate",
 		"github-template"
 	],
-	"contributors": [],
-	"dependencies": {
-		"@ptkdev/logger": "^1.8.0"
-	}
+	"contributors": []
 }

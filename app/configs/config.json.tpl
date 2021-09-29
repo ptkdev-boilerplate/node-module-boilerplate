@@ -11,7 +11,7 @@
 		"warning": "enabled",
 		"error": "enabled",
 		"sponsor": "enabled",
-		"write": "enabled",
+		"write": "disabled",
 		"type": "log"
 	}
 }
