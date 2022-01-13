@@ -1,4 +1,4 @@
-# v2.0.0 (January 13, 2022)
+# v2.0.2 (January 14, 2022)
 
 -   Refactor: code quality, scripts and interfaces
 -   Security: updated packages
