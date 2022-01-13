@@ -208,7 +208,7 @@
 				{
 					"url": "https://github.com/ptkdev-components",
 					"color": "#e74c3c",
-					"label": "\udea7 WebComponents",
+					"label": "🚧 WebComponents",
 					"message": "My Collection",
 					"style": "flat",
 					"logo": "",
@@ -217,7 +217,7 @@
 				{
 					"url": "https://github.com/ptkdev/aboutmeinfo-telegram-bot",
 					"color": "#1FA0F2",
-					"label": "\udd16 Bot",
+					"label": "🔖 Bot",
 					"message": "AboutMeInfo",
 					"style": "flat",
 					"logo": "",
@@ -253,7 +253,7 @@
 				{
 					"url": "https://github.com/sourcesense/joyce",
 					"color": "#CECBE6",
-					"label": "\uddc4 Sourcesense",
+					"label": "🗄 Sourcesense",
 					"message": "Joyce",
 					"style": "flat",
 					"logo": "",
