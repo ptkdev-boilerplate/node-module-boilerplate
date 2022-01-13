@@ -21,7 +21,7 @@ export interface ModuleInterface {
 	 * =====================
 	 * Set text
 	 *
-	 * @interface [ModuleInterface](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/app/types/module.type.ts)
+	 * @interface [ModuleInterface](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/app/types/module.interfaces.ts)
 	 *
 	 * @param { String } text - input text
 	 *
@@ -40,7 +40,7 @@ export interface ModuleResponseInterface {
 	 * =====================
 	 * Get text
 	 *
-	 * @interface [ModuleResponseInterface](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/app/types/module.type.ts)
+	 * @interface [ModuleResponseInterface](https://github.com/ptkdev-boilerplate/node-module-boilerplate/blob/main/app/types/module.interfaces.ts)
 	 *
 	 * @return {fn} string - run app() for output text
 	 *
