@@ -11,10 +11,12 @@
  * @license: MIT License
  *
  */
-import logger from "../app/utils/logger";
+import Logger from "@ptkdev/logger";
 const replace = require("replace-in-file");
 const setup = require("../setup.json");
 const pkg = require("../package.json");
+
+const logger = new Logger();
 
 (async () => {
 	try {

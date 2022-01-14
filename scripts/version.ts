@@ -9,9 +9,11 @@
  *
  */
 import * as fs from "fs";
-import logger from "../app/utils/logger";
+import Logger from "@ptkdev/logger";
 import { argv } from "yargs";
 import pkg from "../package.json";
+
+const logger = new Logger();
 
 const version = pkg.version.split(".");
 let next_version, patch;
