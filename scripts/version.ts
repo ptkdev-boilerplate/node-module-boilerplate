@@ -9,6 +9,7 @@
  *
  */
 import * as fs from "fs";
+import logger from "../app/utils/logger";
 import { argv } from "yargs";
 import pkg from "../package.json";
 
@@ -43,9 +44,9 @@ switch (argv.cmd) {
 pkg.version = next_version;
 
 if (fs.existsSync("./package.json")) {
-	fs.writeFile("./package.json", JSON.stringify(pkg), function writeJSON(err) {
-		if (err) {
-			console.log(err);
+	fs.writeFile("./package.json", JSON.stringify(pkg), function writeJSON(error) {
+		if (error) {
+			logger.error(JSON.stringify(error));
 		}
 	});
 }

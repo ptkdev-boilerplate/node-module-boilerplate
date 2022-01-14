@@ -8,23 +8,29 @@
  * @license: MIT License
  *
  */
+import logger from "../app/utils/logger";
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
 import semver from "../package.json";
+const gitdotfile = `${__dirname}/../.git/config`;
+let branch = "";
+let hash = "";
 
 const execSyncWrapper = (command: string) => {
-	let stdout: string | null = null;
+	let stdout = "";
 	try {
 		stdout = execSync(command).toString().trim();
 	} catch (error) {
-		console.error(error);
+		logger.error(JSON.stringify(error));
 	}
 	return stdout;
 };
 
-const branch = execSyncWrapper("git rev-parse --abbrev-ref HEAD");
-const hash = execSyncWrapper("git rev-parse --short=7 HEAD");
+if (fs.existsSync(gitdotfile)) {
+	branch = execSyncWrapper("git rev-parse --abbrev-ref HEAD");
+	hash = execSyncWrapper("git rev-parse --short=7 HEAD");
+}
 
 const obj = {
 	semver: semver.version.split("-")[0],
