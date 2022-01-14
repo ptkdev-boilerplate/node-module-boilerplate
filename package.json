@@ -26,7 +26,8 @@
 	"scripts": {
 		"setup": "ts-node --skip-project scripts/setup.ts && ts-node --skip-project scripts/changelog.ts && npm run pre-commit",
 		"start": "npm run git-hash && node dist/core/run.js",
-		"start-example": "npm run release && ts-node examples/example.ts",
+		"start-example-ts": "npm run release && ts-node examples/example.ts",
+		"start-example-js": "npm run release && node examples/example.js",
 		"dev": "npm run git-hash && ts-node scripts/configs.ts && ts-node scripts/rmdist.ts && nodemon --exec 'ts-node app/core/run.ts'",
 		"build": "tsc",
 		"release": "npm run git-hash && ts-node scripts/configs.ts && npm run build && tsc --declaration --emitDeclarationOnly",
