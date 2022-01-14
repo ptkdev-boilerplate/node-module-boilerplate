@@ -1,80 +1,115 @@
 {
-	"files.autoSave": "afterDelay",
-	"files.autoSaveDelay": 30000,
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"eslint.format.enable": true,
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[scss]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[jsonc]": {
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
-	"editor.formatOnSave": true,
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"auto-close-tag.disableOnLanguage": ["typescript", "javascript"],
+	"color-highlight.matchWords": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.cursorSmoothCaretAnimation": true,
 	"editor.formatOnPaste": true,
-	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"],
+	"editor.formatOnSave": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.largeFileOptimizations": false,
+	"editor.suggestSelection": "first",
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"editor.wordWrapColumn": 120,
+	"eslint.format.enable": true,
 	"eslint.options": {
 		"extensinons": [".ts", ".js", ".tsx", ".jsx", ".svelte"]
 	},
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"],
+	"files.associations": {
+		".all-contributorsrc": "json",
+		".all-shieldsrc": "json",
+		"*.js.tpl": "typescript"
+	},
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 3000,
+	"files.eol": "\n",
+	"files.trimFinalNewlines": true,
+	"files.watcherExclude": {
+		"**/logs/**": true
+	},
+	"git.autofetch": true,
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"material-icon-theme.folders.associations": {
+		"cordova": "Vm",
+		"desktop": "Container",
+		"dist-client": "Dist",
+		"dist-desktop": "Dist",
+		"dist-mobile": "Dist",
+		"drivers": "Database",
+		"interface": "Include",
+		"interfaces": "Include",
+		"ISSUE_TEMPLATE": "Template",
+		"logger": "Log",
+		"mode": "Class",
+		"modules": "App",
+		"types": "Typescript",
+		"webcomponent": "Middleware",
+		"webcomponents": "Middleware",
+		"wordpress": "wordpress"
+	},
+	"polacode.transparentBackground": true,
+	"search.exclude": {
+		"**/logs": true
+	},
+	"security.workspace.trust.enabled": false,
+	"svelte.enable-ts-plugin": true,
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]", "[x]"],
 	"todo-tree.highlights.customHighlight": {
-		"TODO": {
-			"foreground": "black",
-			"background": "#82AAFF",
-			"icon": "tag",
-			"iconColour": "#82AAFF",
-			"gutterIcon": true
-		},
 		"BUG": {
-			"foreground": "white",
 			"background": "#AC4142",
+			"foreground": "white",
+			"gutterIcon": true,
 			"icon": "bug",
-			"iconColour": "#AC4142",
-			"gutterIcon": true
+			"iconColour": "#AC4142"
 		},
 		"FIXME": {
-			"foreground": "black",
 			"background": "#FFCC00",
-			"iconColour": "#FFCC00",
+			"foreground": "black",
+			"gutterIcon": true,
 			"icon": "alert",
-			"gutterIcon": true
+			"iconColour": "#FFCC00"
+		},
+		"TODO": {
+			"background": "#82AAFF",
+			"foreground": "black",
+			"gutterIcon": true,
+			"icon": "tag",
+			"iconColour": "#82AAFF"
 		}
 	},
 	"todo-tree.highlights.defaultHighlight": {
 		"type": "text-and-comment"
 	},
-	"material-icon-theme.folders.associations": {
-		"wordpress": "wordpress",
-		"modules": "App",
-		"desktop": "Container",
-		"dist-desktop": "Dist",
-		"dist-client": "Dist",
-		"dist-mobile": "Dist",
-		"webcomponent": "Middleware",
-		"webcomponents": "Middleware",
-		"interfaces": "Include",
-		"interface": "Include",
-		"logger": "Log",
-		"mode": "Class",
-		"types": "Typescript",
-		"ISSUE_TEMPLATE": "Template"
-	}
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+	"typescript.preferences.importModuleSpecifierEnding": "js"
 }
