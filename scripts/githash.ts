@@ -8,12 +8,14 @@
  * @license: MIT License
  *
  */
-import logger from "../app/utils/logger";
+import Logger from "@ptkdev/logger";
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
 import semver from "../package.json";
+
 const gitdotfile = `${__dirname}/../.git/config`;
+const logger = new Logger();
 let branch = "";
 let hash = "";
 

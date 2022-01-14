@@ -9,7 +9,9 @@
  *
  */
 import * as fs from "fs";
-import logger from "../app/utils/logger";
+import Logger from "@ptkdev/logger";
+
+const logger = new Logger();
 
 if (fs.existsSync("./CHANGELOG.md")) {
 	fs.readFile("./CHANGELOG.md", "utf8", (error, data) => {
