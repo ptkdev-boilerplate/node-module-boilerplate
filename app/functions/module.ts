@@ -47,4 +47,5 @@ const m = async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> =>
 	};
 };
 
+export { m };
 export default m;
