@@ -6,7 +6,7 @@
 
 <!-- all-shields/header-badges:END -->
 
-Create your npm library with this friendly boilerplate. Use this respository as template for your new node library/module
+Create your npm library with this user friendly boilerplate. Use this respository as template for your new node library/module
 
 This is a [github template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), you can fork it or [use as template](https://github.com/ptkdev-boilerplate/node-module-boilerplate/generate) for start new project with this repository as hello-world. I hate start new project with empty template, often i missing correct configuration, readme instruction or i need of samples of code. Use this repository as template solve this problem.
 
