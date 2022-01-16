@@ -111,7 +111,7 @@ const logger = new Logger();
 		await replace({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-			from: /Create your npm library with this friendly boilerplate. Use this respository as template for your new node library\/module/g,
+			from: /Create your npm library with this user friendly boilerplate. Use this respository as template for your new node library\/module/g,
 			to: setup.description,
 		});
 	} catch (error) {
