@@ -1,7 +1,6 @@
-# v2.0.5 (January 15, 2022)
+# v2.0.6 (January 16, 2022)
 
--   Fix: remove tests from build
--   Fix: translate()
+-   Fix: CI/CD
 
 <!-- all-shields/sponsors-badges:START -->
 
