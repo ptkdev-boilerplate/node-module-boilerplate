@@ -1,4 +1,4 @@
-# v2.0.7 (TBD)
+# v2.0.7 (February 21, 2022)
 
 -   Refactor: CI/CD now update the version of the package to the latest (nightly)
 
