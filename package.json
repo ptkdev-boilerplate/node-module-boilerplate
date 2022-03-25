@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-module-boilerplate",
 	"displayName": "Node NPM Library Boilerplate",
 	"description": "Create your npm library with this user friendly boilerplate. Use this respository as template for your new node library/module",
-	"version": "2.0.8-nightly.32",
+	"version": "2.0.8-nightly.33",
 	"main": "dist/functions/module.js",
 	"publishConfig": {
 		"access": "public"
@@ -75,7 +75,7 @@
 		"markserv": "^1.17.4",
 		"nodemon": "^2.0.15",
 		"pm2": "^5.2.0",
-		"prettier": "^2.6.0",
+		"prettier": "^2.6.1",
 		"replace-in-file": "^6.3.2",
 		"shelljs": "^0.8.5",
 		"ts-jest": "^27.1.4",
