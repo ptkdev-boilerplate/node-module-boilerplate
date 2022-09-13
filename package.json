@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-module-boilerplate",
 	"displayName": "Node NPM Library Boilerplate",
 	"description": "Create your npm library with this user friendly boilerplate. Use this respository as template for your new node library/module",
-	"version": "2.0.8-nightly.181",
+	"version": "2.0.8-nightly.182",
 	"main": "dist/functions/module.js",
 	"publishConfig": {
 		"access": "public"
@@ -59,8 +59,8 @@
 	},
 	"devDependencies": {
 		"@ptkdev/all-shields-cli": "^2.0.2",
-		"@types/jest": "^29.0.1",
-		"@types/node": "^18.7.17",
+		"@types/jest": "^29.0.2",
+		"@types/node": "^18.7.18",
 		"@types/shelljs": "^0.8.11",
 		"@types/yargs": "^16.0.4",
 		"@typescript-eslint/eslint-plugin": "^5.37.0",
@@ -78,7 +78,7 @@
 		"prettier": "^2.7.1",
 		"replace-in-file": "^6.3.5",
 		"shelljs": "^0.8.5",
-		"ts-jest": "^29.0.0",
+		"ts-jest": "^29.0.1",
 		"ts-node": "^10.9.1",
 		"ts-patch": "^2.0.2",
 		"typescript": "^4.8.3",
