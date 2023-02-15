@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-module-boilerplate",
 	"displayName": "Node NPM Library Boilerplate",
 	"description": "Create your npm library with this user friendly boilerplate. Use this respository as template for your new node library/module",
-	"version": "2.0.8-nightly.335",
+	"version": "2.0.8-nightly.336",
 	"main": "dist/functions/module.js",
 	"publishConfig": {
 		"access": "public"
@@ -70,7 +70,7 @@
 		"eslint-plugin-jest": "^27.2.1",
 		"eslint-plugin-jsdoc": "^40.0.0",
 		"husky": "^8.0.3",
-		"jest": "^29.4.2",
+		"jest": "^29.4.3",
 		"json": "^11.0.0",
 		"markserv": "^1.17.4",
 		"nodemon": "^2.0.20",
